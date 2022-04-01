@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    php73:
+        image: ezsystems/php:7.3-v2
+        volumes:
+        - .:/var/www:ro,cached
+    php74:
+        image: ezsystems/php:7.4-v2
+        volumes:
+        - .:/var/www:ro,cached
